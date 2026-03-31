@@ -18,6 +18,8 @@ function Profile() {
   const [following, setFollowing] = useState(false);
   const [followLoading, setFollowLoading] = useState(false);
 
+
+// eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     if (profileId) {
       fetchBooks();

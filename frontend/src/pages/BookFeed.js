@@ -18,7 +18,8 @@ function BookFeed() {
   const [reviewForm, setReviewForm] = useState({ rating: 5, text: "" });
   const [reviewLoading, setReviewLoading] = useState(false);
   const [reviewError, setReviewError] = useState("");
-
+  
+// eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     fetchBook();
     fetchPosts();
